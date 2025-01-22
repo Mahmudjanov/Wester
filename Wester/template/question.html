@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="{% static './css/questionstyle.css' %}">
+</head>
+<body>
+    <header>
+        <img src="./image/Screenshot 2025-01-06 113805.png" alt="">
+        <h1>+999 99 999 99 99</h1>
+    </header>
+    <div class="quiz-container">
+        <!-- Progress Tracker -->
+        <div class="progress-tracker">
+            # <span id="current-question">1</span>/<span id="total-questions">12</span>
+        </div>
+
+        <!-- Question 1 -->
+         {% for i in questions %}
+        <div class="question" id="question-1">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <h2>Sizga qiyin topshiriq yuklatilganda o’zingizni qanday tutasiz?</h2>
+            <div class="options">
+                <div class="option" data-value="Введение в программирование">
+                    {{i.text}}
+                    <span class="action">+</span>
+                </div>
+                <div class="option" data-value="Введение в программирование">
+                    {{i.text}}
+                    <span class="action">+</span>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev-btn" disabled>Oldingisi</button>
+                <form action="result.html">
+                    <button class="next-btn" data-next="question-2" disabled>Keyingisi</button>
+                </form>
+            </div>
+        </div>
+        {% endfor%}
+    </div>
+    <script src="{% static './js/question.js' %}"></script>
+</body>
+</html>

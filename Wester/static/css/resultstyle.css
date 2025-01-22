@@ -1,0 +1,181 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-height: 1000px;
+    width: 905px;
+    margin: auto;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    column-gap: 1000px;
+    padding: 10px 320px 10px 320px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header img {
+    max-width: 60px;
+}
+
+.top {
+    background-color: #F2F2F2;
+    background-image: url(../image/image1.png);
+    background-repeat: no-repeat;
+    background-size: 201px;
+    background-position: 725px;
+    border-radius: 24px;
+    max-width: 900px;
+    margin: auto;
+    padding: 30px 0px 22px 22px;
+}
+
+.best {
+    width: 460px;
+    left: 467px;
+    margin: 30px 0px 10px 0px;
+    padding: 20px 20px 20px 20px;
+
+    background-image: url(../image/Curcle.png);
+    background-repeat: no-repeat;
+    background-position: 100px;
+    background: radial-gradient(50% 50% at 50% 50%, #00D959 0%, #C1EC65 48.96%, #CFFF80 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    border-radius: 24px;
+}
+
+.best h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.best h1 {
+    font-size: 60px;
+    position: absolute;
+    margin: -60px 0px 0px 325px;
+}
+
+.other {
+    width: 460px;
+    left: 467px;
+    margin: 10px 0px 10px 0px;
+    padding: 20px 20px 20px 20px;
+
+    background-image: url(../image/Curcle.png);
+    background-repeat: no-repeat;
+    background-position: 100px;
+    background-size: 50px;
+    background-color: #F2F3F7;
+    border-radius: 24px;
+}
+
+.other h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.other h1 {
+    font-size: 60px;
+    position: absolute;
+    margin: -60px 0px 0px 325px;
+}
+
+.right {
+    max-width: 405px;
+
+    position: absolute;
+    width: 400px;
+    margin-left: 525px;
+    margin-top: -577px;
+
+}
+
+.course {
+    position: absolute;
+    width: 340px;
+    background: radial-gradient(50% 50% at 50% 50%, #EAEED5 0%, #46C1F6 24.08%, #638FF6 43.31%, #7C63F6 69.61%, #8D46F6 100%);
+    border-radius: 20px;
+    padding: 21px 20px 20px 24px;
+    color: white;
+}
+
+.plus-button {
+    position: absolute;
+    margin: -30px 0px 0px 300px;
+    width: 35px;
+    height: 35px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.plus-button:hover {
+    background: linear-gradient(145deg, #1e1f2d, #1a1b29);
+}
+
+.learn {
+    position: absolute;
+    margin-top: 200px;
+    width: 365px;
+    background: url(../image/67a72d3b73f3ce000f0ce2c0339010ac.png), #F2F3F7;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: 260px -10px;
+    border-radius: 20px;
+    padding: 20px 0px 20px 20px;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.learn h2 {
+    font-size: 30px;
+    color: #8D46F6;
+}
+
+.ad {
+    width: 345px;
+    height: 120px;
+    position: absolute;
+    margin-top: 410px;
+    padding: 20px 20px 20px 20px;
+    background-color: #F2F3F7;
+    border-radius: 20px;
+}
+.img1{
+    position: absolute;
+    width: 20px;
+    margin-top: 10px;
+}
+.img2{
+    position: absolute;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.img3{
+    position: absolute;
+    width: 90px;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+.img4{
+    position: absolute;
+    width: 90px;
+    margin-top: 14px;
+    margin-left: 260px;
+}

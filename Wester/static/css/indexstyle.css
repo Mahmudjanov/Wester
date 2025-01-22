@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  display: flex;
+  column-gap: 1000px;
+  padding: 10px 320px 10px 320px;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header img {
+  max-width: 60px;
+}
+
+.container {
+  background-color: #F5F5F5;
+  background-image: url(../image/image.png);
+  background-repeat: no-repeat;
+  background-size: 542px;
+  background-position: 865px 165px;
+  padding: 110px 48px 160px 48px;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 1300px;
+}
+
+.container h1 {
+  font-size: 42px;
+}
+
+.container button {
+  width: 260px;
+  height: 50px;
+  margin: 109px 0px 3px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.popup-content h2 {
+  font-size: 27px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup-content input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.enter-btn {
+  width: 303px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.popup-content button:hover {
+  background-color: #444;
+}
+
+.close-btn {
+  background: none;
+  position: absolute;
+  top: 305px;
+  right: 800px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}

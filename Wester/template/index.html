@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '../static/css/indexstyle.css' %}">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <img src="{%static './image/Screenshot 2025-01-06 113805.png' %}" alt="">
+        <h1>+999 99 999 99 99</h1>
+    </header>
+    <div class="container">
+        <h1>IT sohasida o’zingiz uchun qaysi<br> kasb mos kelishini bilib oling</h1>
+        <button onclick="openPopup()" id="open-popup-btn">Bilib olish</button>
+    </div>
+    <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup()">×</button>
+            <h2>IT ga birinchi qadam <br>shu yerdan boshlanadi!</h2>
+            <p>Test natijalari bo’yicha yordam berishimiz <br>uchun bizga ma’lumotlaringizni qoldiring.</p>
+            <form id="popup-form" action="{% url 'questions' %}">
+                <input type="text" id="name" placeholder="Ismingiz" required />
+                <input type="number" id="age" placeholder="Yoshingiz" required />
+                <input type="tel" id="phone" placeholder="Telefon" required />
+                <button class="enter-btn" type="submit">Yuborish</button>
+            </form>
+        </div>
+    </div>
+    <script src="../static/js/Index.js"></script>
+</body>
+
+</html>

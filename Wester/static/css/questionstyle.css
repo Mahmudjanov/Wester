@@ -1,0 +1,146 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    column-gap: 1000px;
+    padding: 10px 320px 10px 320px;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header img {
+    max-width: 60px;
+}
+
+.quiz-container {
+    margin: auto;
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 4px rgba(128, 128, 128, 0.514);
+    width: 734px;
+}
+
+.progress-tracker {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.options {
+    width: 722px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 7px 7px 7px 7px;
+    background-color: #F2F2F2;
+    border-radius: 16px;
+}
+
+.option {
+    width: 700px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.option.selected {
+    background-color: #F2F2F2;
+    color: black;
+    border: none;
+}
+
+.option .action {
+    width: 16px;
+    height: 16px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(56, 56, 56);
+    transition: color 0.3s;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.option.selected .action {
+    color: rgb(56, 56, 56);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.prev-btn {
+    width: 200px;
+    height: 45px;
+    top: 550px;
+    margin: auto;
+    margin-left: 100px;
+    position: absolute;
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    color: black;
+}
+
+.next-btn {
+    width: 200px;
+    height: 45px;
+    top: 550px;
+    margin-left: 400px;
+    position: absolute;
+    background-color: #000000;
+    border-radius: 10px;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+    width: 35px;
+    height: 35px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    position: absolute;
+    top: 140px;
+    right: 580px;
+    border: none;
+    font-size: 20px;
+    padding: 0px;
+}
